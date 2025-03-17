@@ -21,6 +21,6 @@ Route::post('/user', [UserController::class, 'store']); //http://127.0.0.1:8000/
 Route::put('/user/{user}', [UserController::class, 'update']); //http://127.0.0.1:8000/api/user/1
 Route::delete('/user/{user}', [UserController::class, 'destroy']); //http://127.0.0.1:8000/api/user/1
 Route::put('/user-password/{user}', [UserController::class, 'updatePassword']); //http://127.0.0.1:8000/api/user-password/1
-
+Route::post('/logout',[LoginController::class, 'logout']); // POST - http://127.0.0.1:8000/api/logout
 });
 
